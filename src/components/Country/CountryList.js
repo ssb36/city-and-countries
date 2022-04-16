@@ -7,7 +7,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
-import { Navbaar } from '../Navbaar';
+import { Navbaar } from '../Navbar/Navbaar';
 import { Button } from '@mui/material';
 
 

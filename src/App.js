@@ -6,7 +6,7 @@ import { CityList } from './components/City/CityList';
 import { Country } from './components/Country/Country';
 import { CountryList } from './components/Country/CountryList';
 import { Home } from './components/Home';
-import { Navbaar } from './components/Navbaar';
+import { Navbaar } from './components/Navbar/Navbaar';
 
 function App() {
 
@@ -15,15 +15,14 @@ function App() {
 
   return (
     <div className="App">
-
-
       <Navbaar />
       <br />
       <Divider />
       <Routes>
-
         <Route path="/" element={<Home />} />
+
         <Route path="/add-country" element={<Country />} />
+
         <Route path="/add-city" element={<City />} />
 
         <Route path="/cities" element={<CityList />} />
