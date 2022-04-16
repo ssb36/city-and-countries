@@ -1,0 +1,46 @@
+{
+  "city": [
+    {
+      "cityname": "Delhi",
+      "citypopulation": "19,000,000",
+      "country": "India",
+      "id": 1
+    },
+    {
+      "cityname": "Kolambo",
+      "citypopulation": "5,600,000",
+      "country": "SriLanka",
+      "id": 2
+    },
+    {
+      "cityname": "Chicago",
+      "citypopulation": "2,920,000",
+      "country": "USA",
+      "id": 3
+    },
+    {
+      "cityname": "NASHIK",
+      "citycountry": "",
+      "citypopulation": "1200000",
+      "country": "India",
+      "id": 4
+    },
+    {
+      "cityname": "pune",
+      "citycountry": "",
+      "citypopulation": "12000",
+      "country": "India",
+      "id": 5
+    }
+  ],
+  "country": [
+    {
+      "cityname": "",
+      "citycountry": "",
+      "citypopulation": "",
+      "countryname": "India",
+      "population": "120000",
+      "id": 1
+    }
+  ]
+}
