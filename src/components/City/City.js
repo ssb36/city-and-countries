@@ -29,11 +29,13 @@ export const City = () => {
 
     return (
         <>
+
+            <h3 style={{ fontFamily: "Serif", color: "#8F7FD2" }}>Add City</h3>
             <div>
                 <Input type="text" id='cityname' placeholder='city name' onChange={handleChange} />
                 <br />
                 <br />
-                <Input type='text' id='country' placeholder='coutry name' onChange={handleChange} ></Input>
+                <Input type='text' id='country' placeholder='country' onChange={handleChange} ></Input>
                 <br />
                 <br />
                 <Input type="text" id='citypopulation' placeholder='city population' onChange={handleChange} />

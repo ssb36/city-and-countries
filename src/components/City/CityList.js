@@ -39,41 +39,42 @@ export const CityList = () => {
 
 
     return (
+        <>
+         <h3 style={{ fontFamily: "Serif", color: "#8F7FD2" }}>Cities</h3>
+            <TableContainer component={Paper}>
+                <Table sx={{ minWidth: 650 }} aria-label="simple table">
 
-        <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 650 }} aria-label="simple table">
-
-                <TableHead>
-                    <TableRow>
-                        <TableCell>ID</TableCell>
-                        <TableCell align="left">Name</TableCell>
-                        <TableCell align="left">Country</TableCell>
-                        <TableCell align="left">Population</TableCell>
-                        <TableCell align="left">Edit</TableCell>
-                        <TableCell align="left">Delete</TableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {data.map((row) => (
-                        <TableRow
-                            key={row.id}
-                            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                        >
-                            <TableCell component="th" scope="row">
-                                {row.id}
-                            </TableCell>
-                            <TableCell align="left">{row.cityname}</TableCell>
-                            <TableCell align="left">{row.country}</TableCell>
-                            <TableCell align="left">{row.citypopulation}</TableCell>
-                            <TableCell align="left"><Button variant='contained' >Edit</Button></TableCell>
-                            <TableCell align="left"><Button variant='contained' >Delete</Button></TableCell>
+                    <TableHead>
+                        <TableRow>
+                            <TableCell>ID</TableCell>
+                            <TableCell align="left">Name</TableCell>
+                            <TableCell align="left">Country</TableCell>
+                            <TableCell align="left">Population</TableCell>
+                            <TableCell align="left">Edit</TableCell>
+                            <TableCell align="left">Delete</TableCell>
                         </TableRow>
-                    ))}
-                </TableBody>
+                    </TableHead>
+                    <TableBody>
+                        {data.map((row) => (
+                            <TableRow
+                                key={row.id}
+                                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                            >
+                                <TableCell component="th" scope="row">
+                                    {row.id}
+                                </TableCell>
+                                <TableCell align="left">{row.cityname}</TableCell>
+                                <TableCell align="left">{row.country}</TableCell>
+                                <TableCell align="left">{row.citypopulation}</TableCell>
+                                <TableCell align="left"><Button variant='contained' >Edit</Button></TableCell>
+                                <TableCell align="left"><Button variant='contained' >Delete</Button></TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
 
-            </Table>
-        </TableContainer>
-
+                </Table>
+            </TableContainer>
+        </>
 
     )
 }

@@ -31,6 +31,9 @@ export const Country = () => {
     return (
 
         <div>
+
+            <h3 style={{ fontFamily: "Serif", color: "#8F7FD2" }}>Add Country</h3>
+
             <Input type="text" id='countryname' placeholder='country name' onChange={handleChange} />
             <br />
             <br />
