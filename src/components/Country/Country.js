@@ -9,9 +9,8 @@ export const Country = () => {
 
 
     const [data, setData] = useState({
-        cityname: "",
-        citycountry: "",
-        citypopulation: "",
+        countryname: "",
+        population: "",
     });
 
     const handleChange = (e) => {

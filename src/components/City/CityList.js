@@ -8,6 +8,7 @@ import Paper from '@mui/material/Paper';
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { Navbaar } from '../Navbaar';
+import { Button } from '@mui/material';
 
 
 
@@ -48,6 +49,8 @@ export const CityList = () => {
                         <TableCell align="left">Name</TableCell>
                         <TableCell align="left">Country</TableCell>
                         <TableCell align="left">Population</TableCell>
+                        <TableCell align="left">Edit</TableCell>
+                        <TableCell align="left">Delete</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -62,6 +65,8 @@ export const CityList = () => {
                             <TableCell align="left">{row.cityname}</TableCell>
                             <TableCell align="left">{row.country}</TableCell>
                             <TableCell align="left">{row.citypopulation}</TableCell>
+                            <TableCell align="left"><Button variant='contained' >Edit</Button></TableCell>
+                            <TableCell align="left"><Button variant='contained' >Delete</Button></TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
